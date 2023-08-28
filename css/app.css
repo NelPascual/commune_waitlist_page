@@ -1,0 +1,153 @@
+:root {
+    --bg-color: #f6f9fe;
+    --border-input-color: #c6c3c375;
+    --purple-color: #372865;
+    --dark-text-color: #6d6e6f;
+    --placeholder-text-color: #c6c3c3;
+    --text-color-transparency: rgba(255, 255, 255, 0.7);
+}
+
+/* ++++++++++++++ GLOBAL STYLES ++++++++++++++ */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    text-align: center;
+    padding: 1rem 1.5rem;
+}
+
+.container {
+    max-width: 102rem;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: var(--purple-color);
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+}
+
+.button a {
+    padding: 2rem;
+}
+
+.commune-container {
+    margin: 4rem 3rem;
+}
+
+/* ++++++++++++++ HEADER ++++++++++++++ */
+
+.logo-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ++++++++++++++ MAIN ++++++++++++++ */
+
+.learn-more {
+    background-color: var(--purple-color);
+    border-radius: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.learn-more p,
+.learn-more a {
+    color: var(--text-color-transparency);
+}
+
+.main-title h1 {
+    padding: 0 1rem;
+}
+
+.main-title p {
+    color: var(--dark-text-color);
+}
+
+.main-title h1,
+.main-title p {
+    margin-bottom: 1.5rem;
+}
+
+form .email {
+    margin-bottom: 1.5rem;
+}
+
+form .email input {
+    border: 1px solid var(--border-input-color);
+    font-size: 1.6rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+form .email input::placeholder {
+    color: var(--placeholder-text-color);
+}
+
+.button a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main-navigation,
+.main-illustration {
+    display: none;
+}
+
+/* ++++++++++++++ COMPANIES ++++++++++++++ */
+
+.companies-container {
+    margin-top: 2rem;
+}
+
+.companies-container p {
+    color: var(--dark-text-color);
+    font-weight: bold;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.company-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;margin-top: 1rem;
+}
